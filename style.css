@@ -46,6 +46,7 @@
 .caja__opciones{
     background-color: #1F1D1D;
     width: 100%;
+    padding: 10px;
     border-radius: 10px;
 }
 .opciones{
@@ -63,12 +64,14 @@
     margin-top: 30px;
     background-color: #1F1D1D;
     border-radius: 10px;
+    padding: 10px;
 }
 .title__library{
     display: flex;
     flex-direction: row;
-    justify-content: center;
-    gap: 100px;
+    justify-content: flex-start;
+    padding: 10px;
+    gap: 20px;
 }
 
 .Icono-titulo{
@@ -97,7 +100,9 @@
     display: flex;
     flex-direction: row;
     align-items: center;
-    gap: 5px;
+    font-size: 0.7rem;
+    font-family: Arial, Helvetica, sans-serif;
+    gap: 8px;
 }
 
 .options{
