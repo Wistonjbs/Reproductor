@@ -9,18 +9,24 @@
     outline: none;
     list-style: none;
     text-decoration: none;
-    border: 1px solid red;
+    /* border: 1px solid red; */
     box-sizing: border-box;
 }
-.img__body{    
-    position: absolute;
-    z-index: -10;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
+body{    
+    background-image: url(/assets/img/texture.png);
 }
+.bttn{
+    background: transparent;
+    border: none;
+}
+
+.bttn:hover{
+    background: transparent;
+    border: none;
+    color: #c0b3b3 ;
+    
+}
+
 .contenedor__principal{
     display: flex;
     flex-direction: row;
@@ -31,20 +37,22 @@
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    background-color: #100F0F;
+    background-color: #100f0f9c;
     padding: 10px;
     border-radius: 10px;
     width: 25%;
+    
 }
 .icons{
     width: 30px;
     height: 30px;
+
 }
 .contenedor__opciones{
     width: 100%;
 }
 .caja__opciones{
-    background-color: #1F1D1D;
+    background-color: #1f1d1d8d;
     width: 100%;
     padding: 10px;
     border-radius: 10px;
@@ -52,8 +60,8 @@
 .opciones{
     display: flex;
     flex-direction: row;
-    justify-content: flex-start;
-    align-items: center;
+    
+  
     padding: 10px;
     gap: 5px;
 }
@@ -62,7 +70,7 @@
     flex-direction: column;
     width: 100%;
     margin-top: 30px;
-    background-color: #1F1D1D;
+    background-color: #1f1d1d90;
     border-radius: 10px;
     padding: 10px;
 }
@@ -96,10 +104,14 @@
     flex-direction: row;
     align-items: center;
     font-size: 0.7rem;
-    font-family: Arial, Helvetica, sans-serif;
     gap: 8px;
 }
-
+.info-opciones p {
+    font-family: "Red Hat Display", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
 .options{
     width: 14px;
     height: 14px;
@@ -113,7 +125,7 @@
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    background-color: #100F0F;
+    background-color: #100f0f90;
     padding: 10px;
     border-radius: 10px;
     width: 73%;
@@ -124,6 +136,7 @@
     flex-direction: column;
     align-items: self-start;
     width: 100%;
+    padding: 10px;
 }
 
 .tittle-playlist{
@@ -134,7 +147,7 @@
     gap: 20px;
     width: 100%;
     border-radius: 10px;
-    background-color: #093203;
+    background-color: #0932037c;
     padding: 10px;
     .txt{
         font-size: 4rem;
@@ -143,12 +156,19 @@
 
 .songs{
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     gap: 150px;
     width: 100%;
     align-items: center;
-    padding: 10px;
+    padding: 20px;
 
+}
+
+.songs p{
+    font-family: "Red Hat Display", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
 }
 
 .cover-info{
@@ -173,7 +193,7 @@
 }
 
 .footer{
-    background-color: #100F0F;
+    background-color: #100f0fdd;
     padding: 16px 20px;
     position: fixed;
     bottom: 0;

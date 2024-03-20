@@ -5,16 +5,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="Wiston">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="icon" href="/assets/img/icon_volume.png">
+    
+    <link rel="icon" href="/assets/img/icon_cover.png">
 
 
     <link rel="stylesheet" href="/Style.css">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Bakbak+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bakbak+One&family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
     <title>Reproductor</title>
 
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
     
 
 </head>
@@ -23,8 +25,7 @@
 
 <body>
     
-    <img class="img__body" src="assets/img/texture.png" alt="textura de fondo">
-
+    
     <div class="contenedor__principal">
 
         <div class="organizador__left"> 
@@ -36,38 +37,18 @@
                 <div class="caja__opciones">
                     
                     <!-- contenedor para home -->
-                    <div class="opciones">
-                        <a href="">
-                            <img class="icons" src="assets/img/icon_home.png" alt="icono representativo de menu home">
-                        </a>
-
-                        <a href="">
-                            <h2> Home</h2>
-                        </a>
-    
+                    <div class="opciones">                      
+                       <button class="bttn" id="handler-button"> <img class="icons" src="/assets/img/icon_home.png" alt="">  Home</button>
                     </div>
                     
                     <!-- contenedor para search -->
                     <div class="opciones">
-                        <a href="">
-                            <img class="icons" src="assets/img/icon_search.png" alt="icono representativo de menu home">
-                        </a>
-
-                        <a href="">
-                            <h2> Search</h2>
-                        </a>
-    
+                        <button class="bttn" id="handler-button"> <img class="icons" src="/assets/img/icon_search.png" alt="">  search</button>
                     </div>
     
                     <!-- contenedor para favorites -->
                     <div class="opciones">
-                        <a href="">
-                            <img class="icons" src="assets/img/icon_favorites.png" alt="icono representativo de menu home">
-                        </a>
-                        <a href="">
-                            <h2> Favorites</h2>
-                        </a>
-    
+                        <button class="bttn" id="handler-button"> <img class="icons" src="/assets/img/icon_favorites.png" alt="">  Favorites</button>
                     </div>
     
                 </div>
@@ -78,15 +59,15 @@
                     <!-- esto se refiere al titulo de la libreria -->
                     <div class="title__library">
                         <div class="Icono-titulo">
-                            <img class="icons" src="assets/img/icon_library.png" alt="icono representativo de una libreria">
+                            <img class="icons" src="/assets/img/icon_library.png" alt="icono representativo de una libreria">
                             
                         </div>
                         
                         <h2> Your library</h2>
                         
                         <div class="contenedor-iconos">
-                            <img class="icons" src="assets/img/icon_plus.png" alt="icono representativo de signo mas">
-                            <img class="icons" src="assets/img/icon_arrow.png" alt="icono representativo de una flecha">
+                            <img class="icons" src="/assets/img/icon_plus.png" alt="icono representativo de signo mas">
+                            <img class="icons" src="/assets/img/icon_arrow.png" alt="icono representativo de una flecha">
                         </div>
 
                     </div>
@@ -168,73 +149,22 @@
                     <h1 class="txt">Listachiquiluki</h1>
                 </div>
                 
-                <div class="songs">
-                    <div class="cover-info">
-                        <img class="covers" src="assets/img/img_cover.png" alt="">
-                       
-                        <div class="info-songs" >
-                            <h3>Besame sin sentir</h3>
-                            <p>Micro THD</p>
+                <div class="songs" id="track-list">
+                        <div class="cover-info">
+                            <img class="covers" src="assets/img/img_cover.png" alt="">
+                            <p>3:18</p>
                         </div>
-                    </div>
-
-                    <p>3:18</p>
-
-                    <div class="donwload">
-                       <p>Donwload</p>
-                        <img class="icons" src="assets/img/icon_donwload.png" alt="">
-                    </div>
-
                 </div>
-
-                <div class="songs">
-                    <div class="cover-info">
-                        <img class="covers" src="assets/img/img_cover.png" alt="">
-                       
-                        <div class="info-songs" >
-                            <h3>Besame sin sentir</h3>
-                            <p>Micro THD</p>
-                        </div>
-                    </div>
-
-                    <p>3:18</p>
-
-                    <div class="donwload">
-                       <p>Donwload</p>
-                        <img class="icons" src="assets/img/icon_donwload.png" alt="">
-                    </div>
-
-                </div>
-
-                <div class="songs">
-                    <div class="cover-info">
-                        <img class="covers" src="assets/img/img_cover.png" alt="">
-                       
-                        <div class="info-songs" >
-                            <h3>Besame sin sentir</h3>
-                            <p>Micro THD</p>
-                        </div>
-                    </div>
-
-                    <p>3:18</p>
-
-                    <div class="donwload">
-                       <p>Donwload</p>
-                        <img class="icons" src="assets/img/icon_donwload.png" alt="">
-                    </div>
-
-                </div>
-
             </div>
         </div>
-
-
     </div>
 
     
     <footer class="footer">
-        <img class="covers" src="assets/img/img_cover.png" alt="">
+        <img class="covers" src="/assets/img/img_cover.png" alt="">
     </footer>
+    
+    <script src="/script.js"></script>
 </body>
 
 </html>
