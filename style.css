@@ -17,6 +17,8 @@ body{
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
+    height: 100vh;
+    overflow: hidden;
 }
 .bttn{
     background: transparent;
@@ -35,6 +37,7 @@ body{
     flex-direction: row;
     justify-content: space-between;
     padding: 20px;
+    height: 100%;
 
 }
 .organizador__left{
@@ -45,6 +48,7 @@ body{
     padding: 10px;
     border-radius: 10px;
     width: 25%;
+    height: 85%;
     
 }
 .icons{
@@ -54,6 +58,7 @@ body{
 }
 .contenedor__opciones{
     width: 100%;
+    height: 85%;
 }
 .caja__opciones{
     background-color: #1f1d1d8d;
@@ -73,10 +78,12 @@ body{
     display: flex;
     flex-direction: column;
     width: 100%;
+    height: 70%;
     margin-top: 30px;
     background-color: #1f1d1d90;
     border-radius: 10px;
     padding: 10px;
+    overflow-y: scroll;
 }
 .title__library{
     display: flex;
@@ -102,6 +109,7 @@ body{
     padding: 0px 16.14px;
     gap: 10px;
     margin-top: 30px;
+    height: 85%;
 }
 .info-opciones{
     display: flex;
@@ -163,7 +171,7 @@ body{
     display: flex;
     flex-direction: column;
     width: 100%;
-    height: 25%;
+    height: 17%;
     gap: 30px;
     align-items: center;
     padding: 20px;
