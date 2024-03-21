@@ -9,11 +9,14 @@
     outline: none;
     list-style: none;
     text-decoration: none;
-    /* border: 1px solid red; */
+    border: 1px solid red;
     box-sizing: border-box;
 }
 body{    
     background-image: url(/assets/img/texture.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
 }
 .bttn{
     background: transparent;
@@ -32,6 +35,7 @@ body{
     flex-direction: row;
     justify-content: space-between;
     padding: 20px;
+
 }
 .organizador__left{
     display: flex;
@@ -129,6 +133,7 @@ body{
     padding: 10px;
     border-radius: 10px;
     width: 73%;
+
 }
 
 .contenedor-playlist{
@@ -157,10 +162,12 @@ body{
 .songs{
     display: flex;
     flex-direction: column;
-    gap: 150px;
     width: 100%;
+    height: 25%;
+    gap: 30px;
     align-items: center;
     padding: 20px;
+    overflow-y: scroll ;
 
 }
 
@@ -175,17 +182,14 @@ body{
     display: flex;
     flex-direction: row;
     align-items: center;
-    width: 70%;
+    justify-content: space-between;
+    width: 90%;
     gap: 30px;
 }
-
 .info-songs{
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
-    width: 100%;
 }
-
 .donwload{
     display: flex;
     flex-direction: row;
@@ -195,7 +199,7 @@ body{
 .footer{
     background-color: #100f0fdd;
     padding: 16px 20px;
-    position: fixed;
+    position: sticky;
     bottom: 0;
     left: 0;
     z-index: 100;

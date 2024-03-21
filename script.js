@@ -24,7 +24,16 @@ axios.get("https://leonardoapi.onrender.com/songs")
 
             div.innerHTML = `
             <img class="covers" src="${song.path.front}" alt="">
-            <p>3:18</p>
+            
+            <div class="info-songs"> 
+                <h2>${song.title}</h2>
+                <p>${song.author}</p>
+            </div>
+            <p>${song.duration}</p>
+            <div class="donwload">
+                <p>donwload </p>
+                <img src="/assets/img/icon_donwload.png" alt="">
+            </div>
         
             `
             tracklist.appendChild(div)
