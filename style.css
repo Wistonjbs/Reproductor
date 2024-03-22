@@ -20,6 +20,12 @@ body{
     height: 100vh;
     overflow: hidden;
 }
+p{
+    font-family: "Red Hat Display", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
 .bttn{
     background: transparent;
     border: none;
@@ -176,11 +182,14 @@ body{
 }
 
 .songs p{
+    
     font-family: "Red Hat Display", sans-serif;
     font-optical-sizing: auto;
     font-weight: 400;
     font-style: normal;
+
 }
+
 
 .cover-info{
     display: flex;
@@ -219,6 +228,23 @@ body{
     flex-direction: row;
     width: 50%;
     margin-left: 100px;
+    gap: 20px
+    ;
+}
+
+.footer-authortitle{
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+}
+
+.footer-authortitle p{
+
+    font-family: "Red Hat Display", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+
 }
 
 .footer-audio{
